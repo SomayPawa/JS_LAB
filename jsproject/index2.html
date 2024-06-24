@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(66, 65, 65); color :azure">
+    <script>
+      document.write("<br>")
+
+        var x = 10;
+if (x > 5) {
+  document.write("x is greater then 5"+ "<br>"); 
+} else {
+  document.write("x is less then 5"+ "<br>"); 
+}
+
+var fruits = ["Apple", "Banana", "Orange", "Mango"];
+for (var i = 0; i < fruits.length; i++) {
+  <!-- console.log("Fruit:", fruits[i]); -->
+  document.write("Fruit:",fruits[i] + "<br>")
+}
+
+var day = "Monday";
+switch (day) {
+  case "Monday":
+    console.log("Monday");
+    document.write("Monday"+"<br>")
+    break;
+  case "Tuesday":
+    console.log("Tuesday");
+    document.write("Tuesday"+"<br>")
+    break;
+  case "Wednesday":
+    console.log("Wednesday");
+    document.write("Wednesday"+"<br>")
+    break;
+  case "Thursday":
+    console.log("Thursday");
+    document.write("Thursday"+"<br>")
+    break;
+  case "Friday":
+    console.log("Friday");
+    document.write("Friday"+"<br>")
+    break;
+  case "Saturday":
+    console.log("Saturday");
+    document.write("Saturday"+"<br>")
+    break;
+  case "Sunday":
+    console.log("Sunday");
+    document.write("Sunday"+"<br>")
+    break;
+  default:
+    console.log("Invalid day!");
+    document.write("Invalid"+"<br>")
+}
+
+    </script>
+</body>
+</html>

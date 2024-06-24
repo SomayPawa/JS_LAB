@@ -1,0 +1,85 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#FFFFFF, #93A8AC, #424B54); /* Gradient background */
+}
+
+/* Other CSS styles remain unchanged */
+
+.personal-info {
+    text-align: center;
+    margin-top: 20px;
+    color: #9D5C63; 
+}
+
+.personal-info p {
+    font-size: 20px; 
+    margin: 8px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #D6E3F8; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #584B53; 
+}
+
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.experiment-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experiment-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.experiment-row p {
+    flex: 1;
+    text-align: center;
+    color: #584B53;
+}
+
+button {
+    flex: 2;
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #9D5C63; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #584B53; 
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Somay-Lal-Pawa - Portfolio</title>
+</head>
+<body>
+    <nav draggable="true" ondragstart="drag(event)">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#coding-profile">Coding Profile</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#extracurricular">Extracurricular</a></li>
+            <li><a href="#contact">Contact-Me</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="content-section">
+        <!-- Home section content -->
+        <h2>Home</h2>
+        <img src="21CS1047.jpg" alt="Your Photo">
+        <p>Hey, I'm SOMAY LAL PAWA, a computer science student at Puducherry Technological University. I really like figuring out puzzles with computers.</p>
+
+        <p>I've been practicing a bunch on websites like LeetCode and GeeksforGeeks, solving more than 450 problems on each. I've also tackled 2667 problems on InterviewBit – just kept going!</p>
+        <p>Apart from coding, I've played around with making websites using HTML, CSS, and JavaScript. I also know a bit of C# and Java. I've done a couple of projects making things look nice on the front end and worked on web forms too.</p>
+        <p>Now, I'm excited about putting together a project that shows off both my problem-solving skills and my ability to make things on the web. Let's see where this coding adventure takes me!</p>
+        <p>Feel free to check out my work on LinkedIn and GitHub. There, you'll find details about the projects I've worked on and more about me.</p>
+        <p>Let's connect and explore the world of coding together! 🚀</p>
+        <ul>
+            <li>LinkedIn Profile: <a href="https://www.linkedin.com/in/somay-lal-pawa-385b6a237/">LinkedIn</a></li>
+            <li>GitHub Profile: <a href="https://github.com/SomayPawa">GitHub</a></li>
+        </ul>
+    </section>
+
+    <section id="skills" class="content-section">
+        <!-- Skills section content -->
+        <h2>Skills</h2>
+        <div class="category">
+            <h1>Languages:</h1>
+            <ul>C++, C, JavaScript, C#</ul>
+        </div>
+        <div class="category">
+            <h1>Fundamentals:</h1>
+            <ul>Data Structure, Algorithm, OS, DBMS, OOPs</ul>
+        </div>
+        <div class="category">
+            <h1>Web Development</h1>
+            <ul>HTML, CSS, JavaScript</ul>
+        </div>
+        <div class="category">
+            <h1>Tools</h1>
+            <ul>VS Code, Git, Android Studio</ul>
+        </div>
+    </section>
+
+    <section id="coding-profile" class="content-section">
+        <!-- Coding Profile section content -->
+        <h2>Coding Profile</h2>
+        <ul>
+            <li>LeetCode: <a href="https://leetcode.com/somaycoder/">LeetCode</a></li>
+            <li>GeeksforGeeks: <a href="https://auth.geeksforgeeks.org/user/somaycoder">GeeksforGeeks</a></li>
+        </ul>
+    </section>
+
+    <section id="achievements" class="content-section">
+        <!-- Achievements section content -->
+        <h2>Achievements</h2>
+        <h5>Solved 600+ questions on LeetCode</h5>
+        <h5>Solved 450+ questions on GeeksforGeeks</h5>
+    </section>
+
+    <section id="extracurricular" class="content-section">
+        <!-- Extracurricular section content -->
+        <h2>Extracurricular Activity</h2>
+        <h5>Joint Secretary of Coding Club at Pondicherry Technological University</h5>
+        <h5>Lead the organizing team for a coding contest held in Pondicherry</h5>
+    </section>
+
+    <section id="contact" class="content-section">
+        <!-- Contact section content -->
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:xyzmail@gmail.com">xyzmail@gmail.com</a></p>
+        <p>Contact Number: XXXXXXXXXX</p>
+    </section>
+
+    <section id="audio-section" class="content-section">
+        <h2>Audio Example</h2>
+        <audio controls>
+            <source src="myvideo.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <section id="video-section" class="content-section">
+        <h2>Video Example</h2>
+        <video controls style="height: 200px; width: 300px;">
+            <source src="myvideo.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+    </section>
+    
+
+    
+    <section id="todo-session" class="content-section">
+        <!-- To-Do List (Session Storage) section content -->
+        <h2>To-Do List (Session Storage)</h2>
+        <input type="text" id="taskInputSession" placeholder="Enter task">
+        <button onclick="addTask('session')">Add Task</button>
+        <ul id="taskListSession"></ul>
+    </section>
+    
+    <section id="todo-local" class="content-section">
+        <!-- To-Do List (Local Storage) section content -->
+        <h2>To-Do List (Local Storage)</h2>
+        <input type="text" id="taskInputLocal" placeholder="Enter task">
+        <button onclick="addTask('local')">Add Task</button>
+        <ul id="taskListLocal"></ul>
+    </section>
+
+    <section id="current-location" class="content-section">
+        <!-- Current Location section content -->
+        <h2>Current Location</h2>
+        <p id="location-info">Fetching location...</p>
+    </section>
+    <section id = "current-location" class="content-section">
+        <h1>Web Worker Example</h1>
+        <button id="workButton">Start Worker</button>
+    </section>
+    <footer>
+        <!-- Footer content -->
+        <h2>Contact Me</h2>
+        <form method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+
+            <p>
+            <label>Name
+            <input type="text" name="customer_name" required>
+            </label> 
+            </p>
+            
+            <p>
+            <label>Phone 
+            <input type="tel" name="phone_number">
+            </label>
+            </p>
+            
+            <p>
+            <label>Email 
+            <input type="email" name="email_address">
+            </label>
+            </p>
+            
+            <fieldset>
+            <legend>Which programming language you like most?</legend>
+            <p><label> <input type="radio"  required value="JAVASCRIPT"> JAVASCRIPT </label></p>
+            <p><label> <input type="radio"  required value="C++"> C++ </label></p>
+            <p><label> <input type="radio"  required value="C"> C </label></p>
+            <p><label> <input type="radio"  required value="JAVA"> JAVA</label></p>
+
+            </fieldset>
+
+            <fieldset>
+            <legend>Hoby</legend>
+            <p><label> <input type="checkbox"  value="photography"> Photography. </label></p>
+            <p><label> <input type="checkbox"  value="painting">Painting </label></p>
+            <p><label> <input type="checkbox"  value="dancing"> Dancing </label></p>
+            </fieldset>
+            
+            <p>
+            <label>Date/Time
+            <input type="datetime-local" name="pickup_time" required>
+            </label>
+            </p>
+                
+            <p>
+            <label>country Name
+            <select id="pickup_place" name="pickup_place">
+            <option value="" selected="selected">Select One</option>
+            <option value="India" >India</option>
+            <option value="USA" >USA</option>
+            <option value="UK" >UK</option>
+            </select>
+            </label> 
+            </p>
+            <p>
+            <label>Special Message
+            <textarea name="comments" maxlength="500"></textarea>
+            </label>
+            </p>
+            
+            <p><button>Submit Form</button></p>
+
+            </form>
+    </footer>
+    <script src="worker.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

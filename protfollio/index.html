@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Somay-Lal-Pawa - Portfolio</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#coding-profile">Coding Profile</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#extracurricular">Extracurricular</a></li>
+            <li><a href="#contact">Contact-Me</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="content-section">
+        <h2>Home</h2>
+        <img src="21CS1047.jpg" alt="Your Photo">
+        <p>Hey, I'm SOMAY LAL PAWA, a computer science student at Puducherry Technological University. I really like figuring out puzzles with computers.</p>
+
+        <p>I've been practicing a bunch on websites like LeetCode and GeeksforGeeks, solving more than 450 problems on each. I've also tackled 2667 problems on InterviewBit – just kept going!</p>
+        <p>Apart from coding, I've played around with making websites using HTML, CSS, and JavaScript. I also know a bit of C# and Java. I've done a couple of projects making things look nice on the front end and worked on web forms too.</p>
+        <p>Now, I'm excited about putting together a project that shows off both my problem-solving skills and my ability to make things on the web. Let's see where this coding adventure takes me!</p>
+        <p>Feel free to check out my work on LinkedIn and GitHub. There, you'll find details about the projects I've worked on and more about me.</p>
+        <p>Let's connect and explore the world of coding together! 🚀</p>
+        <ul>
+            <li>LinkedIn Profile: <a href="https://www.linkedin.com/in/somay-lal-pawa-385b6a237/">LinkedIn</a></li>
+            <li>GitHub Profile: <a href="https://github.com/SomayPawa">GitHub</a></li>
+        </ul>
+    </section>
+
+    <section id="skills" class="content-section">
+        <h2>Skills</h2>
+        <div class="category">
+            <h1>Languages:</h1>
+            <ul>C++, C, JavaScript, C#</ul>
+        </div>
+        <div class="category">
+            <h1>Fundamentals:</h1>
+            <ul>Data Structure, Algorithm, OS, DBMS, OOPs</ul>
+        </div>
+        <div class="category">
+            <h1>Web Development</h1>
+            <ul>HTML, CSS, JavaScript</ul>
+        </div>
+        <div class="category">
+            <h1>Tools</h1>
+            <ul>VS Code, Git, Android Studio</ul>
+        </div>
+    </section>
+
+    <section id="coding-profile" class="content-section">
+        <h2>Coding Profile</h2>
+        <ul>
+            <li>LeetCode: <a href="https://leetcode.com/somaycoder/">LeetCode</a></li>
+            <li>GeeksforGeeks: <a href="https://auth.geeksforgeeks.org/user/somaycoder">GeeksforGeeks</a></li>
+        </ul>
+    </section>
+
+    <section id="achievements" class="content-section">
+        <h2>Achievements</h2>
+        <h5>Solved 500+ questions on LeetCode</h5>
+        <h5>Solved 450+ questions on GeeksforGeeks</h5>
+    </section>
+
+    <section id="extracurricular" class="content-section">
+        <h2>Extracurricular Activity</h2>
+        <h5>Joint Secretary of Coding Club at Pondicherry Technological University</h5>
+        <h5>Lead the organizing team for a coding contest held in Pondicherry</h5>
+    </section>
+
+    <section id="contact" class="content-section">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:lalpawasomay@gmail.com">lalpawasomay@gmail.com</a></p>
+        <p>Contact Number: 7597192512</p>
+    </section>
+    
+    <footer>
+        <h2>Contact Me</h2>
+        <form method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+
+            <p>
+            <label>Name
+            <input type="text" name="customer_name" required>
+            </label> 
+            </p>
+            
+            <p>
+            <label>Phone 
+            <input type="tel" name="phone_number">
+            </label>
+            </p>
+            
+            <p>
+            <label>Email 
+            <input type="email" name="email_address">
+            </label>
+            </p>
+            
+            <fieldset>
+            <legend>Which programming language you like most?</legend>
+            <p><label> <input type="radio"  required value="JAVASCRIPT"> JAVASCRIPT </label></p>
+            <p><label> <input type="radio"  required value="C++"> C++ </label></p>
+            <p><label> <input type="radio"  required value="C"> C </label></p>
+            <p><label> <input type="radio"  required value="JAVA"> JAVA</label></p>
+
+            </fieldset>
+            
+            <fieldset>
+            <legend>Hoby</legend>
+            <p><label> <input type="checkbox"  value="photography"> Photography. </label></p>
+            <p><label> <input type="checkbox"  value="painting">Painting </label></p>
+            <p><label> <input type="checkbox"  value="dancing"> Dancing </label></p>
+            </fieldset>
+            
+            <p>
+            <label>Date/Time
+            <input type="datetime-local" name="pickup_time" required>
+            </label>
+            </p>
+                
+            <p>
+            <label>country Name
+            <select id="pickup_place" name="pickup_place">
+            <option value="" selected="selected">Select One</option>
+            <option value="India" >India</option>
+            <option value="USA" >USA</option>
+            <option value="UK" >UK</option>
+            </select>
+            </label> 
+            </p>
+            <p>
+            <label>Special Message
+            <textarea name="comments" maxlength="500"></textarea>
+            </label>
+            </p>
+            
+            <p><button>Submit Form</button></p>
+
+            </form>
+    </footer>
+    
+
+</body>
+</html>

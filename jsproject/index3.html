@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(55, 52, 52); color:aliceblue">
+    <script>
+      document.write("<br>")
+
+      function factorial(num) {
+          if (num === 0 || num === 1) {
+            return 1;
+          } else {
+            return num * factorial(num - 1);
+          }3
+        }
+        let x = prompt("enter num");
+        console.log("Factorial is ", factorial(x)); 
+        document.write("Factorial of 5 is ",factorial(x) + "<br>")
+        function scopeExample() {
+          var variableVar = "Scoped to the function (var)";
+          let variableLet = "Scoped to the block (let)";
+          const variableConst = "Scoped to the block (const)";
+        
+          console.log(variableVar); 
+          console.log(variableLet); 
+          console.log(variableConst); 
+          document.write(variableVar+"<br>")
+          document.write(variableLet+"<br>")
+          document.write(variableConst+"<br>")
+        }
+
+        const a= 3;
+        console.log(a);
+        a = 4;
+        console.log(a);
+
+        
+        scopeExample();
+        function outerFunction() {
+          let outerVariable = "Outer";
+          function innerFunction() {
+            let innerVariable = "Inner";
+            console.log("Inner function accessing outerVariable:", outerVariable);
+            document.write("Inner function accessing outerVariable:", outerVariable+"<br>");
+
+          }
+          innerFunction();
+        }
+       
+        outerFunction();
+    </script>
+</body>
+</html>

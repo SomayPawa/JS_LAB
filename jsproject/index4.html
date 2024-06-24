@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Manipulation</title>
+    <script>
+        window.onload = function() {
+    
+            var myDiv = document.getElementById("myDiv");
+            myDiv.textContent = "New text content";
+            myDiv.innerHTML = "<p>New HTML content</p>";
+
+         
+            var newItem = document.createElement("li");
+            var textNode = document.createTextNode("New List Item");
+            newItem.appendChild(textNode);
+            var myList = document.getElementById("myList");
+            myList.appendChild(newItem);
+
+ 
+            function toggleVisibility() {
+                var element = document.getElementById("toggleElement");
+                if (element.style.display === "none") {
+                    element.style.display = "block";
+                } else {
+                    element.style.display = "none";
+                }
+            }
+        };
+    </script>
+</head>
+<body style="background-color: rgb(56, 52, 52); color:aliceblue">
+    <div id="myDiv">Original content</div>
+    <ul id="myList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <button onclick="toggleVisibility()">Toggle Visibility</button>
+    <div id="toggleElement" style="display: block;">Visible Element</div>
+</body>
+</html>

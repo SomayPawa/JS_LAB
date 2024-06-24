@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="form-group">
+            <label for="userId">Enter User ID:</label>
+            <input type="text" class="form-control" id="userId" placeholder="Enter User ID">
+        </div>
+        <button type="button" class="btn btn-primary" onclick="getData()">Get Data</button>
+    </div>
+    
+    <div id="userData" class="container mt-3"></div>
+
+    <script>
+        function getData() {
+            // jsonplaceholder
+            var userId = document.getElementById("userId").value;
+            fetch(`https://jsonplaceholder.typicode.com/posts/${userId}`)
+                .then((response) => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then((data) => {
+                    displayData(data);
+                })
+                .catch((error) => {
+                    console.error('There was a problem with the fetch operation:', error);
+                });
+        }
+
+        function displayData(data) {
+            var userDataContainer = document.getElementById("userData");
+            userDataContainer.innerHTML = `
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">User ID: ${data.userId}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">ID: ${data.id}</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">Title: ${data.title}</h6>
+                        <p class="card-text">Body: ${data.body}</p>
+                    </div>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>
